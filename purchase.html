@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purchase Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://js.stripe.com/v3/"></script> <!-- Stripe.js -->
+</head>
+<body>
+  <div class="container">
+    <h1>Purchase Page</h1>
+    <div class="product">
+      <h2>Product Name</h2>
+      <p>Price: $49.99</p>
+    </div>
+    <form id="payment-form">
+      <div id="card-element"><!-- Stripe will inject CardElement here --></div>
+      <button id="submit-button" type="submit">Pay $49.99</button>
+    </form>
+    <div id="payment-message" class="hidden"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
